@@ -1,0 +1,119 @@
+body {
+    font-size: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    position: relative;
+    margin-top: 100px;
+}
+body .container{
+    border: 1px solid black;
+    width: 360px;
+    margin-left: 50px;
+}
+#container2{
+    position: absolute;
+    left:400px;
+    top:0px;
+
+}
+#container3{
+    position: absolute;
+    left:800px;
+    top:0px;
+}
+
+
+.container > #make {
+     display: flex;
+    justify-content:center;
+    color: grey;
+}
+
+ .container > #change::before {
+    content: 'LIFESTYLE';
+    background-color:mediumseagreen ;
+    animation: animate infinite 6s;
+    padding: 0px 10px;
+} 
+
+@keyframes animate {
+
+    0% {
+        content: "LIFESTYLE";
+        background-color: mediumseagreen;
+        color: white;
+    }
+
+    50% {
+        content: "WORK";
+        background-color: lightskyblue;
+        color: white;
+    }
+
+    75% {
+        content: "EVERYTHING";
+        background-color: orangered;
+        color: white;
+    }
+}
+
+.container > #change-1::before {
+    content: 'WORK';
+    background-color: lightskyblue;
+    animation: animate1 infinite 6s;
+    padding-left: 10px;
+    padding: 0px 10px;
+} 
+
+@keyframes animate1 {
+
+    0% {
+        content: "WORK";
+        background-color: lightskyblue;
+        color: white;
+       
+    }
+
+    50% {
+        content: "EVERYTHING";
+        background-color: orangered;
+        color: white;
+        
+    }
+
+    75% {
+        content: "LIFESTYLE";
+        background-color: mediumseagreen;
+        color: white;
+    }
+}
+
+.container > #change-2::before {
+    content: 'EVERYTHING';
+    background-color: orangered;
+    animation: animate2 infinite 6s;
+    padding-left: 10px;
+    padding: 0px 10px;
+} 
+
+@keyframes animate2 {
+
+    0% {
+        content: "EVERYTHING";
+        background-color: orangered;
+        color: white;
+    }
+
+    50% {
+        content: "LIFESTYLE";
+        background-color: mediumseagreen;
+        color: white; 
+        
+    }
+
+    75% {
+        content: "WORK";
+        background-color: lightskyblue;
+        color: white;
+    }
+}

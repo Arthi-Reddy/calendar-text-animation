@@ -1,0 +1,35 @@
+.header{
+    margin: 0px;
+    margin-left: 60px;
+}
+
+ol{
+    list-style-type: none;
+    margin:0px;
+}
+
+.week-days{
+    display: flex;
+}
+
+.week-days li{
+   background-color: rgb(236, 234, 234);
+   width: 36px;
+   height: 27px;
+   padding-top: 10px;
+   margin-top: 6px;
+   margin-bottom: 6px; 
+}
+
+.days {
+    display: grid;
+    grid-template-columns: 36px 36px 36px 36px 36px 36px 36px;
+    width: 252px;
+    margin-left: 40px;
+    row-gap: 10px;
+    border: 1px solid rgb(248, 245, 245);
+  }
+  
+  #item-1 {
+    grid-column-start: 3;
+  }
